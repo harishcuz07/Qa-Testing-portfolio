@@ -19,15 +19,15 @@ public class BrowserLauchAndWebDriverMethodsConcept {
 		//driver.manage().window().setSize(d);   // to set size of the  browser
 		//driver.manage().window().setPosition(new Point(350,200));  to set position
 		
-		driver.get("https://www.google.com/");
-		/*
-		 * String title=driver.getTitle(); System.out.println(title);
-		 * 
-		 * String currentUrl=driver.getCurrentUrl(); System.out.println(currentUrl);
-		 * 
-		 * String pageSource=driver.getPageSource(); System.out.println(pageSource);
-		 * Thread.sleep(2000); driver.quit();
-		 */
+		  driver.get("https://www.google.com/");
+		
+	          String title=driver.getTitle(); System.out.println(title);
+		
+		  String currentUrl=driver.getCurrentUrl(); System.out.println(currentUrl);
+		   
+		   String pageSource=driver.getPageSource(); System.out.println(pageSource);
+		  Thread.sleep(2000); driver.quit();
+		 
 		
 	}
 }
