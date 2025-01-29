@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1" >
+ <groups>
+ <define name="all">
+  <include name="SmokeTest"/>
+   <include name="Regression"/>
+ </define>
+ 
+ <run>
+ <include name="all"/>
+ <include name="SmokeTest"/>
+   <include name="firsttry"/>
+ </run>
+ </groups>
+  <test name="Regression1">
+    <classes>
+      <class name="TestNGConcept.FailedTest"/>
+       <class name="TestNGConcept.GroupingConcept"/>
+    </classes>
+  </test>
+  
+   <test name = "firsttry">
+	 <groups>
+		   <run>
+		<include name="first try"> 
+		   </include>	 
+		 </run>
+ 	 </groups>
+ </test>
+ 	 
+  <listeners>
+  <listener class-name="TestNGConcept.MyTransformConcept"></listener>
+  </listeners>
+</suite>
